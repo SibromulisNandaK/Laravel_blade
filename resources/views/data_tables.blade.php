@@ -440,13 +440,17 @@
     <!-- /.card-body -->
 </div>
 @push('script')
-<script src="{{ asset('lte') }}/plugins/datatables/jquery.dataTables.js"></script>
-<script src="{{ asset('lte') }}/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="{{ asset('lte/plugins/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('lte/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
 <script>
-    $(function() {
+    $(function () {
         $("#example1").DataTable();
     });
 
 </script>
+@endpush
+@push('style')
+<link rel="stylesheet" href="{{ asset('lte/plugins/datatables-bs4/css/dataTables.bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ asset('lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
 @endpush
 @endsection

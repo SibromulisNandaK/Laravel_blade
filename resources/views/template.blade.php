@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | Blank Page</title>
-  @stack('script')
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -12,6 +11,7 @@
   <link rel="stylesheet" href="{{ asset('lte') }}/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset('lte') }}/dist/css/adminlte.min.css">
+  <!-- @stack('style') -->
   
 </head>
 <body class="hold-transition sidebar-mini">
@@ -742,14 +742,13 @@
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
+      <!-- <div class="card"> -->
         
           
-        
           @yield('content')
 
 
-      </div>
+      <!-- </div> -->
       <!-- /.card -->
 
     </section>
@@ -773,6 +772,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
+  @stack('script')
 <script src="{{ asset('lte') }}/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="{{ asset('lte') }}/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
