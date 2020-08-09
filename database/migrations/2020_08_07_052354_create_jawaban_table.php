@@ -17,8 +17,11 @@ class CreateJawabanTable extends Migration
             $table->integer('id');
             $table->string('isi', 255);
             $table->date('tanggal_dibuat');
-            $table->integer('jawaban_id');
+            $table->date('tanggal_diperbaharui');
+            $table->integer('pertanyaan_id');
             $table->integer('profil_id');
+            $table->foreign('profil_id')->references('id')->on('profil');
+            $table->foreign('pertanyaan_id')->references('id')->on('pertanyaan');
             $table->primary('id');
             $table->timestamps();
         });

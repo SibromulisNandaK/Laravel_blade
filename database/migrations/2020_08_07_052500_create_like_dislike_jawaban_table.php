@@ -14,9 +14,11 @@ class CreateLikeDislikeJawabanTable extends Migration
     public function up()
     {
         Schema::create('like_dislike_jawaban', function (Blueprint $table) {
-            $table->integer('pertanyaan_id');
+            $table->integer('jawaban_id');
             $table->integer('profil_id');
             $table->integer('poin', 11);
+            $table->foreign('jawaban_id')->references('id')->on('jawaban');
+            $table->foreign('profil_id')->references('id')->on('profil');
             $table->timestamps();
         });
     }

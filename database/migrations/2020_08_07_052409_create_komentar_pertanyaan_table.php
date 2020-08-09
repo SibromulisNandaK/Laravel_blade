@@ -19,6 +19,8 @@ class CreateKomentarPertanyaanTable extends Migration
             $table->date('tanggal_dibuat');
             $table->integer('pertanyaan_id');
             $table->integer('profil_id');
+            $table->foreign('profil_id')->references('id')->on('profil');
+            $table->foreign('pertanyaan_id')->references('id')->on('pertanyaan');
             $table->primary('id');
             $table->timestamps();
         });

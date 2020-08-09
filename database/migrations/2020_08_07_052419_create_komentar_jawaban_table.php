@@ -19,6 +19,8 @@ class CreateKomentarJawabanTable extends Migration
             $table->date('tanggal_dibuat');
             $table->integer('jawaban_id');
             $table->integer('profil_id');
+            $table->foreign('profil_id')->references('id')->on('profil');
+            $table->foreign('jawaban_id')->references('id')->on('jawaban');
             $table->primary('id');
             $table->timestamps();
         });
