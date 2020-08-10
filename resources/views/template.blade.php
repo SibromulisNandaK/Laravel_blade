@@ -726,7 +726,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>Semangattt!!!</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -739,7 +739,7 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
+    <!-- <section class="content"> -->
 
       <!-- Default box -->
       <!-- <div class="card"> -->
@@ -751,7 +751,7 @@
       <!-- </div> -->
       <!-- /.card -->
 
-    </section>
+    <!-- </section> -->
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
